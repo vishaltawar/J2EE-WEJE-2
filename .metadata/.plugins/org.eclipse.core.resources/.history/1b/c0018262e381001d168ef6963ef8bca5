@@ -1,0 +1,14 @@
+package com.jspider.springcore.annotation.config;
+
+import com.jspider.springcore.annotation.beans.StudentBean;
+
+public class StudentConfig {
+	public StudentBean getStudentBean() {
+		StudentBean student=new StudentBean();
+		student.setId(1);
+		student.setName("Vishal");
+		student.setEmali(null);
+		return student;
+	}
+
+}

@@ -1,0 +1,36 @@
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.io.IOException"%>
+<%@page import="java.sql.SQLException"%>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    
+  <%  try {
+
+		connection = Player.getConnection();
+		preparedStatement = connection.prepareStatement("delete from song where id=?");
+		preparedStatement.setInt(1, choise);
+
+		result = preparedStatement.executeUpdate();
+		%>
+		<%= result + " row(s) Deleted"%>
+
+	} catch (SQLException e) {
+		e.printStackTrace();
+	}
+
+} %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete Song</title>
+</head>
+<body>
+<a href="ViewSong.jsp">View Songs</a>
+
+</body>
+</html>

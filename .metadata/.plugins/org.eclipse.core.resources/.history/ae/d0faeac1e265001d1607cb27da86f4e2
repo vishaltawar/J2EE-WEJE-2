@@ -1,0 +1,5 @@
+package com.jspider.jdbc.main;
+
+public class Jdbc3Insert {
+
+}

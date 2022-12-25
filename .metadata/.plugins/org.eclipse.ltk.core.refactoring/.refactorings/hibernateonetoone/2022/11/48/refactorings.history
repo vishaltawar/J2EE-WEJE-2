@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;hibernate2&apos;&#x0D;&#x0A;- Original project: &apos;hibernate2&apos;&#x0D;&#x0A;- Original element: &apos;hibernate2/src/main/resource/METE_INF&apos;" description="Delete element" element1="/src\/main\/resource&lt;METE_INF" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1669355248917" subPackages="false" version="1.0"/>
+</session>

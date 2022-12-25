@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean class="com.jspider.springcore.beans.CustomerBean"
+		name="customer1">
+		<property name="id" value="1" />
+		<property name="name" value="Sanjay" />
+		<property name="mobile" value="8974568791" />
+		<property name="product">
+			<ref bean="product1" />
+		</property>
+	</bean>
+	
+	<bean class="com.jspider.springcore.beans.CustomerBean"
+		name="customer2">
+		<property name="id" value="2" />
+		<property name="name" value="Ajay" />
+		<property name="mobile" value="7774568791" />
+		<property name="product">
+			<ref bean="product1" />
+		</property>
+	</bean>
+
+	<bean class="com.jspider.springcore.beans.ProductBean"
+		name="product1">
+		<property name="id" value="1" />
+		<property name="name" value="Watch" />
+		<property name="price" value="3500" />
+		<property name="customer">
+			<ref bean="customer1" />
+		</property>
+
+	</bean>
+
+</beans>

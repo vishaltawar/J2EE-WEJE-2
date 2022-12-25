@@ -1,0 +1,9 @@
+package com.jspider.springcore.beans;
+
+public class StudentBeans {
+	int id;
+	String name;
+	String email;
+	long contact;
+
+}

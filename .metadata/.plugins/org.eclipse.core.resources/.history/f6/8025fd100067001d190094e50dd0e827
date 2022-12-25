@@ -1,0 +1,5 @@
+package com.jspider.jdbcdyanamic.main;
+
+public class JdbcDelete {
+
+}

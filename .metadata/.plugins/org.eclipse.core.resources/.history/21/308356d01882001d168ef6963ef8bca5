@@ -1,0 +1,5 @@
+package com.jspider.springcore.annotation.beans;
+
+public class WifeBean {
+
+}

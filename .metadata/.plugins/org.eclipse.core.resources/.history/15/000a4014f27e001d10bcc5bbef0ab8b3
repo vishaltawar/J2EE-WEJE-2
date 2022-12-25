@@ -1,0 +1,101 @@
+<%@page import="java.sql.ResultSet"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.io.IOException"%>
+<%@page import="java.sql.SQLException"%>
+<%@page import="javax.servlet.ServletException"%>
+<%@page import="javax.servlet.annotation.WebServlet"%>
+<%@page import="javax.servlet.http.HttpServlet"%>
+<%@page import="javax.servlet.ServletException"%>
+
+<%!Connection connection;%>
+	<%! PreparedStatement statement;%>
+	<%!ResultSet resultSet;%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>View Songs</title>
+<style>
+body{
+background-color: black;
+}
+table{
+margin: 20px auto;
+}
+th{
+border: 1px solid;
+color: white;
+font-size:25px;
+font-weight: bolder;
+padding: 5px 10px;
+}
+.imp{
+border: 1px solid;
+color: white;
+padding: 5px 10px;
+}
+</style>
+</head>
+<body>
+<table style="border: 1px solid yellow">
+		<tr>
+			<th>Song Id</th>
+			<th>Song Name</th>
+			<th>Movie Name</th>
+			<th>Length of song</th>
+			<th>Singer Name</th>
+			<th>Composer Name</th>
+			<th>Lyrics Creater</th>
+		</tr>
+	<%
+try {
+	Class.forName("com.mysql.cj.jdbc.Driver");
+	connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/weje2", "root", "root");
+	statement = connection.prepareStatement("select * from song");
+	resultSet = statement.executeQuery();
+	while (resultSet.next()) {%>
+		
+		
+	<tr id="imp">
+		<td><%= resultSet.getString(1)%></td>		
+		<td><%= resultSet.getString(2)%></td>		
+		<td><%=resultSet.getString(3)%></td>
+		<td><%=resultSet.getFloat(4)%></td>		
+		<td><%=resultSet.getString(5)%></td>		
+		<td><%=resultSet.getString(6)%></td>
+		<td><%=resultSet.getString(7)%></td>
+	</tr>
+
+
+	</table>
+
+	<%} } catch (SQLException e) { %>
+		<%=e%>
+	<%} finally {
+if (connection != null) {
+	try {
+		connection.close();
+	} catch (SQLException e) {
+%>
+	<%=e%>
+<%
+}
+}
+if (statement != null) {
+try {
+statement.close();
+} catch (SQLException e) {
+%>
+	<%=e%>
+	<%}}}
+%>
+
+
+
+</body>
+</html>

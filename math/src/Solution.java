@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Solution {
+		 
+	 
+	    public static int area(int length, int breadth) {
+	        return length*breadth;
+	    }
+	 
+	    public static void main(String[] args) {
+	    	Scanner scanner=new Scanner(System.in);
+
+	    	 int length=scanner.nextInt();
+	         int breadth=scanner.nextInt();
+	    	System.out.println(area(length, breadth));
+	        
+	    }
+	}
+

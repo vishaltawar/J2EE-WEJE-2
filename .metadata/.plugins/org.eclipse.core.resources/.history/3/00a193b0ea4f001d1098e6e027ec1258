@@ -1,0 +1,10 @@
+package com.jspider.multithreading;
+
+public class App {
+	public static void main(String[] args) {
+		System.out.println("Thank You");
+		int[][][][][][][][][] a = new int[10][10][10][10][10][10][10][10][10];
+	System.out.println(a.length);
+	System.out.println("Welcome");
+	}
+}

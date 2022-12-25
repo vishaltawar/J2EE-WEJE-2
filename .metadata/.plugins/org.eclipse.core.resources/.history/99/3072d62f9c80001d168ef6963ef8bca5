@@ -1,0 +1,5 @@
+package com.jspider.springcore.main;
+
+public class ChildBean1 {
+
+}

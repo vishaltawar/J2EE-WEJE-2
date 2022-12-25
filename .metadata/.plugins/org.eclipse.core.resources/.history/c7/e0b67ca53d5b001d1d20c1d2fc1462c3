@@ -1,0 +1,95 @@
+package com.jspider.musicplayer.musicplayer;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.jspider.musicplayer.operation.SongOperation;
+import com.jspider.musicplayer.song.Songs;
+
+public class Player {
+	static boolean loop = true;
+	ArrayList<Songs> songs;
+
+	public static void main(String[] args) {
+		Player player = new Player();
+		while (loop) {
+			player.player();
+		}
+	}
+
+	public void player() {
+		Scanner scanner = new Scanner(System.in);
+		SongOperation operation = new SongOperation();
+		Math.random();
+		System.out.println(
+				"Please chose following operation :-\n1 :- Add/Remove Songs\n2 :- Play a Songs\n3 :- Edit a Songs\n4 :- Exist ");
+		int choise = scanner.nextInt();
+		switch (choise) {
+		case 1:// for Add/Remove songs
+			System.out.println("Choose  :-\n 1 :- Add Songs\n 2 :- Remove a Songs\n 3 :- Back ");
+			choise = scanner.nextInt();
+			switch (choise) {
+			case 1:// add Songs
+				System.out.print("How many Songs you want you to add :- ");
+				choise = scanner.nextInt();
+				while (choise > 0) {
+					operation.addSongs();// call add method
+					System.out.println();
+					choise--;
+				}
+				operation.viewAllSongs();
+				loop = true;
+				break;
+			case 2:// for Remove Songs
+				operation.viewAllSongs();
+				System.out.print("Which song you want to Edit :- ");
+				choise = scanner.nextInt();
+				// delete method call by passing choise number
+				break;
+			case 3:// for Back Home
+				break;
+			default:
+				System.out.println("Invalid Input ");
+				break;
+			}
+
+			break;
+		case 2:// for Play a Songs
+
+			System.out.println(
+					"\nchoose following Operation :- \n1 :- Play All Song\n2 :- Play Random Songs\n3 :- Select Song to Play\n4 : Exist");
+			choise = scanner.nextInt();
+			switch (choise) {
+			case 1:// PlayAll songs
+				operation.playAllSongs();
+				break;
+			case 2:
+
+				break;
+			case 3:
+
+				break;
+			case 4:
+
+				break;
+
+			default:
+				break;
+			}
+
+			break;
+		case 3:// Edit a Songs
+			System.out.print("Which song you want to Edit :- ");
+			choise = scanner.nextInt();
+			// Edit method call by passing choise number
+			break;
+		case 4:
+			loop = false;
+			System.out.println("Thank You.");
+			break;
+		default:
+			break;
+		}
+	}
+
+}

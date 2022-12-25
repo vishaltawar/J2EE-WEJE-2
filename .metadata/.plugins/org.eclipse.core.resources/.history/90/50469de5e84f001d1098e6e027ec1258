@@ -1,0 +1,5 @@
+package com.jspider.multithreading;
+
+public class App {
+System.out.println("It's Empty Class Only");
+}

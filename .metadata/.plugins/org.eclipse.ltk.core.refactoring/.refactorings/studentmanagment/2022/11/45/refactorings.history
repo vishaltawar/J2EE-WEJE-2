@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.jspider.studentmanagment.opration.SongOperation&apos; to &apos;StudentOperation&apos;&#x0D;&#x0A;- Original project: &apos;studentmanagment&apos;&#x0D;&#x0A;- Original element: &apos;com.jspider.studentmanagment.opration.SongOperation&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jspider.studentmanagment.opration.StudentOperation&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SongOperation&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.jspider.studentmanagment.opration{SongOperation.java[SongOperation" matchStrategy="1" name="StudentOperation" qualified="false" references="true" similarDeclarations="false" stamp="1667676239740" textual="false" version="1.0"/>
+</session>

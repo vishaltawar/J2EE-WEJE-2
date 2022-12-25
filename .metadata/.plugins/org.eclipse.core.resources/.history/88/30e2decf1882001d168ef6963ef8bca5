@@ -1,0 +1,5 @@
+package com.jspider.springcore.annotation.config;
+
+public class HusbandWifeConfig {
+
+}

@@ -1,0 +1,37 @@
+package com.jspider.multithreading.main;
+
+import com.jspider.multithreading.threads.MyThread1;
+import com.jspider.multithreading.threads.MyThread2;
+
+public class MyThreadMain {
+
+	public static void main(String[] args) {
+
+		MyThread1 myThread1 = new MyThread1();
+		//System.out.println(myThread1.getName());
+		//myThread1.start();
+		
+		myThread1.setName("MyThread1");
+		//System.out.println(myThread1.getName());
+		myThread1.setPriority(8);
+		myThread1.start();
+
+		MyThread2 myThread2 = new MyThread2();
+		Thread thread = new Thread(myThread2);
+		//thread.start();
+		thread.setName("MyThread2");
+		//System.out.println(thread.getName());
+		thread.setPriority(9);
+		thread.start();
+		
+//		MyThread1 myThread11 = new MyThread1();
+//		myThread11.setName("MyThread11");
+//		//System.out.println(myThread11.getName());
+//		myThread11.setPriority(10);
+//		myThread11.start();
+
+		
+
+	}
+
+}

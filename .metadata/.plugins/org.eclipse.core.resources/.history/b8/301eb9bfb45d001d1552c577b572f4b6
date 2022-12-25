@@ -1,0 +1,84 @@
+package com.jspider.studentmanagment.opration;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import com.jspider.musicplayer.song.Songs;
+import com.jspider.studentmanagment.student.Student;
+
+public class StudentOperation {
+	ArrayList<Student> studentsList = new ArrayList<Student>();
+	
+	// Add Student
+	public void addStudent() {
+		Student student = new Student();
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Enter Student Id : ");
+		student.setId(scanner.nextInt());
+
+		System.out.print("Enter First Name : ");
+		student.setFirstName(scanner.next());
+
+		System.out.print("Enter Email : ");
+		student.setEmali(scanner.next());
+
+		System.out.print("Enter Mobile Number : ");
+		student.setMobile(scanner.nextLong());
+
+		System.out.print("Enter Date Of Birth : ");
+		student.setDob(scanner.next());
+
+		System.out.print("Enter Cource Name : ");
+		student.setCourse(scanner.next());
+
+		System.out.print("Enter Student Degree : ");
+		student.setDegree(scanner.next());
+
+		System.out.print("Enter Student Brance : ");
+		student.setBrance(scanner.next());
+
+		System.out.print("Enter Student Gender : ");
+		student.setGender(scanner.next());
+
+		System.out.print("Enter Blood Group : ");
+		student.setBloodGroup(scanner.next());
+
+		System.out.print("Enter Aadhar Number : ");
+		student.setAadhar(scanner.nextLong());
+
+		studentsList.add(student);
+	}
+
+	// View All Student
+	public void viewAllSongs() {
+		if (studentsList.isEmpty()) {
+			System.out.println("Sorry Student is Not Available in Student List.");
+		} else {
+			System.out.println("List Of All Student :-");
+			for (int i = 0; i < studentsList.size(); i++) {
+
+				System.out.println(i + 1 + " : " + studentsList.get(i));
+
+			}
+		}
+
+	}
+	
+	// Delete Student
+		public void deleteStudent(int choise) {
+			if (studentsList.isEmpty()) {
+				System.out.println("Sorry Song is Not Available in Playlist.");
+			} else {
+				if (choise <= studentsList.size()) {
+					System.out.println(studentsList.get(choise - 1) + " Delete Successfully,");
+					studentsList.remove(choise - 1);
+				} else {
+					System.out.println(choise + " is Not Present in List.");
+				}
+
+			}
+
+		}
+
+}
