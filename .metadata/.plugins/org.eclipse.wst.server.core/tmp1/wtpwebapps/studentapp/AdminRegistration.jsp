@@ -62,16 +62,16 @@
 
             <table>
                 <tr>
-                    <td><input type="text" placeholder="Enter Adimin ID" value="id"></td>
+                    <td><input type="text" placeholder="Enter Adimin ID" name="id"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" placeholder="Enter the Name" value="name"></td>
+                    <td><input type="text" placeholder="Enter the Name" name="name"></td>
                 </tr>
                 <tr>
-                    <td><input type="text" placeholder="Enter the Username" value="username"></td>
+                    <td><input type="text" placeholder="Enter the Username" name="username"></td>
                 </tr>
                 <tr>
-                    <td><input type="password" placeholder="Enter the Password" value="password"></td>
+                    <td><input type="password" placeholder="Enter the Password" name="password"></td>
                 </tr>
                 <tr>
                     <td ><input id="login" type="submit" value="Submit "></td>

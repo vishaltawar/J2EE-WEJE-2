@@ -20,7 +20,7 @@ try {
 <%
 Class.forName("com.mysql.cj.jdbc.Driver");
 connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/studentapp", "root", "root");
-String query = "insert into studentadmin values(?,?,?,?)";
+String query = "insert into admin values(?,?,?,?)";
 statement = connection.prepareStatement(query);
 statement.setString(1, request.getParameter("id"));
 statement.setString(2, request.getParameter("name"));
@@ -72,24 +72,35 @@ statement.close();
 <head>
 <meta charset="UTF-8">
 <title>Admin Registration Details</title>
+<style>
+table{
+border: 2px solid;
+background-color: yellow;
+padding: 5px;
+}
+tr{
+border: 1px solid
+}
+
+</style>
 </head>
 <body>
-	<table>
+	<table >
 		<tr>
 			<td>Admin Id</td>
-			<td><%=request.getParameter("id")%></td>
+			<td>: <%=request.getParameter("id")%></td>
 		</tr>
 		<tr>
 			<td>Admin Name</td>
-			<td><%=request.getParameter("name")%></td>
+			<td>: <%=request.getParameter("name")%></td>
 		</tr>
 		<tr>
 			<td>Username</td>
-			<td><%=request.getParameter("username")%></td>
+			<td>: <%=request.getParameter("username")%></td>
 		</tr>
 		<tr>
 			<td>Password</td>
-			<td><%=request.getParameter("password")%></td>
+			<td>: <%=request.getParameter("password")%></td>
 		</tr>
 	</table>
 

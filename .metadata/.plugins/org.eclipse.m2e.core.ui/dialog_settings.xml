@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\Vishal Tawar\WEJE-2\springmvc\src\main\resources"/>
 			<item value="E:\Vishal Tawar\WEJE-2\manytomay_bidirectional"/>
 			<item value="C:\Vishal Tawar\WEJE-2\manytomany_unidirectional"/>
 		</list>
@@ -27,14 +28,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.jspider"/>
-			<item value="com.jspider.springcore.annotation"/>
 		</list>
 		<list key="groupId">
-			<item value="com.jspider"/>
 		</list>
 		<list key="artifactId">
-			<item value="springcore.annotation"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

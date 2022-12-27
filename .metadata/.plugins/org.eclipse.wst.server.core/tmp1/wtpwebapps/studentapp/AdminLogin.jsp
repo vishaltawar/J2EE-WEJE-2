@@ -62,24 +62,30 @@ table tr td input {
 	background-color: rgba(11, 102, 248, 0.705);
 	margin-top: 30px;
 }
+#main #reset {
+	border: none;
+	background-color: rgb(151 213 21 / 93%);
+	margin-top: 30px;
+}
 </style>
 </head>
 
 <body>
 	<div id="main">
 		<h3 id="headtext">Admin Login</h3>
-		<form action="" method="post">
+		<form action="./AdminLoginDB.jsp" method="post">
 			<table>
 				<tr>
 					<td><input type="text" placeholder="Enter the Username"
-						value="username"></td>
+						name="username"></td>
 				</tr>
 				<tr>
 					<td><input type="password" placeholder="Enter the Password"
-						value="password"></td>
+						name="password"></td>
 				</tr>
 				<tr>
 					<td><input id="login" type="submit" value="Login "></td>
+					<!-- <td><input id="reset" type="reset" value="Reset "></td> -->
 				</tr>
 			</table>
 		</form>

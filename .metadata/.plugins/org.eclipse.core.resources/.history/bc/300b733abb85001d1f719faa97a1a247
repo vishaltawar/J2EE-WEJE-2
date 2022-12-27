@@ -1,0 +1,5 @@
+package com.jspider.springmvc.pojo;
+
+public class StudentPojo {
+
+}

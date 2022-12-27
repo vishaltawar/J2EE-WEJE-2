@@ -23,10 +23,11 @@ nav {
 	border: 1px solid;
 	padding: 10px;
 	min-width: 700px;
-	height: 75px;
+	height: auto;
 	background: linear-gradient(rgb(34, 44, 92), rgb(31, 171, 227));
 	display: flex;
 	justify-content: space-between;
+	box-shadow: 10px 10px 25px;
 }
 
 .logo {
@@ -76,7 +77,7 @@ ul li a {
 <body>
 	<nav>
 		<div class="logo">
-			<h2>Student Management</h2>
+			<h2>Admin</h2>
 		</div>
 		<ul>
 			<li><a href="AdminRegistration.jsp">Registration</a></li>
@@ -85,7 +86,7 @@ ul li a {
 			<li><a href="#">Cantact</a></li> -->
 		</ul>
 	</nav>
-	<h1>Home page</h1>
+	<h1 style="text-align: center; margin-top:40px; font-size:80px;">Home page</h1>
 
 </body>
 </html>
