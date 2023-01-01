@@ -1,0 +1,142 @@
+package com.jspider.springmvc.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.jspider.springmvc.pojo.StudentPojo;
+import com.jspider.springmvc.service.StudentService;
+
+@Controller
+public class StudentControler {
+
+	@Autowired
+	StudentService service;
+
+	@GetMapping("/home")
+	public String getHome() {
+		return "Home";
+	}
+
+	@GetMapping("/add")
+	public String getAdd() {
+		return "StudentRegistration";
+	}
+
+	@PostMapping("/add")
+	public String getAddStudent(@RequestParam String name, @RequestParam String email, @RequestParam long mobile,
+			@RequestParam String city, @RequestParam String username, @RequestParam String password, ModelMap map) {
+		StudentPojo student = service.addStudent(name, email, mobile, city, username, password);
+		if (student != null) {
+			map.addAttribute("student", student);
+		} else {
+			map.addAttribute("msg", "Data not added in Database!");
+		}
+		return "StudentRegistration";
+	}
+
+	@GetMapping("/search")
+	public String getSearch() {
+		return "Search";
+	}
+
+	@PostMapping("/search")
+	public String searchData(@RequestParam int id, ModelMap map) {
+		StudentPojo student = service.search(id);
+		if (student != null) {
+			map.addAttribute("student", student);
+		} else {
+			map.addAttribute("msg", "Data not found..!!");
+		}
+		return "Search";
+	}
+
+	@GetMapping("/remove")
+	public String getRemove(ModelMap map) {
+		List<StudentPojo> student = service.serchAll();
+		if (student != null) {
+			map.addAttribute("students", student);
+		} else {
+			map.addAttribute("msg", "Data Not Found!");
+		}
+
+		return "Remove";
+	}
+
+	@PostMapping("/remove")
+	public String removeStudent(@RequestParam int id, ModelMap map) {
+		StudentPojo student = service.removeStudent(id);
+		if (student != null) {
+			map.addAttribute("msg", "Data Removed Successfully.");
+		} else {
+			map.addAttribute("msg", "Data Not Found!");
+		}
+
+		List<StudentPojo> students = service.serchAll();
+		map.addAttribute("students", students);
+		return "Remove";
+
+	}
+
+	@GetMapping("/update")
+	public String getUpdate(ModelMap map) {
+		List<StudentPojo> students = service.serchAll();
+		map.addAttribute("students", students);
+		return "Update";
+	}
+
+	@PostMapping("/update")
+	public String updateStudent(@RequestParam int id, ModelMap map) {
+		StudentPojo student = service.search(id);
+		
+		if (student != null) {
+			map.addAttribute("student", student);
+			List<StudentPojo> students = service.serchAll();
+			map.addAttribute("students", students);
+			return "UpdateDetails";
+		} else {
+			map.addAttribute("msg", "Data not found..!!");
+			return "Update";
+		}
+
+	}
+
+	@PostMapping("/updatedetails")
+	public String getUpdateDetails(@RequestParam int id, @RequestParam String name, @RequestParam String email,
+			@RequestParam long mobile, @RequestParam String city, @RequestParam String username,
+			@RequestParam String password, ModelMap map) {
+		StudentPojo student = service.search(id);
+		if(student!=null) {
+		service.updateDeatails(id, name, email, mobile, city, username, password);
+		
+
+			map.addAttribute("msg", "Successfully Updated");
+			List<StudentPojo> students = service.searchAll();
+			map.addAttribute("students", students);
+
+		}
+		return "Update";
+	}
+
+
+	@GetMapping("/login")
+	public String geLogin() {
+		return "StudentLogin";
+	}
+
+	@PostMapping("/login")
+	public String login(@RequestParam String username, @RequestParam String password, ModelMap map) {
+		StudentPojo student = service.login(username, password);
+		if (student != null) {
+			return "Home";
+		}
+		map.addAttribute("msg", "Inavlid username or password..!!");
+		return "StudentLogin";
+	}
+
+}
