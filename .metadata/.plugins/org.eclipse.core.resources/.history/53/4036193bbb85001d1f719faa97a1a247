@@ -1,5 +1,0 @@
-package com.jspider.springmvc.repository;
-
-public class StudentRepository {
-
-}

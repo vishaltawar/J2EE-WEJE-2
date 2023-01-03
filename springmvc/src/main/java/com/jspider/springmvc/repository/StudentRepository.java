@@ -131,19 +131,18 @@ public class StudentRepository {
 		entityTransaction.begin();
 		StudentPojo student = entityManager.find(StudentPojo.class, id);
 
-			//student.setId(id);
-			student.setName(name);
-			student.setEmail(email);
-			student.setContact(mobile);
-			student.setCity(city);
-			student.setUsername(username);
-			student.setPassword(password);
-			entityManager.persist(student);
-			entityTransaction.commit();
-			clossConnection();
+		// student.setId(id);
+		student.setName(name);
+		student.setEmail(email);
+		student.setContact(mobile);
+		student.setCity(city);
+		student.setUsername(username);
+		student.setPassword(password);
+		entityManager.persist(student);
+		entityTransaction.commit();
+		clossConnection();
 
-			return student;
-	
+		return student;
 
 	}
 
