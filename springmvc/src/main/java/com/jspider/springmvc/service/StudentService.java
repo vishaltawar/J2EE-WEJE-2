@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.jspider.springmvc.pojo.AdminPojo;
 import com.jspider.springmvc.pojo.StudentPojo;
 import com.jspider.springmvc.repository.StudentRepository;
 
@@ -48,6 +49,12 @@ public class StudentService {
 		StudentPojo pojo = repository.updateDeatails(id, name, email, mobile, city, username, password);
 		return pojo;
 
+	}
+
+	public StudentPojo Adminlogin(String username, String password) {
+		AdminPojo adminPojo = repository.Adminlogin(username, password);
+		
+		return null;
 	}
 
 }

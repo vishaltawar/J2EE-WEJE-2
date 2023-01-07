@@ -107,7 +107,7 @@ table tr td input {
 						name="username"></td>
 				</tr>
 				<tr>
-					<td><input type="password" placeholder="Enter the Password" value="<%=password %>"
+					<td><input type="text" placeholder="Enter the Password" value="<%=password %>"
 						name="password"></td>
 				</tr>
 				<tr>

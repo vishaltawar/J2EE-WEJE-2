@@ -71,9 +71,11 @@ input {
 	background-color: yellow;
 	width: 100%;
 	padding: 15px;
-	text-align: center;
-	border: 1px solid;
-	border-spacing: 10px
+	text-align: center;	
+	border-spacing: 0px
+}
+#table2 tr td{
+padding: 8px;
 }
 #fld{
 width: 95%;
@@ -107,11 +109,11 @@ margin: 0 auto 20px auto;
 	} 
 	if (students != null) {
 	%>
-	<fieldset id="fld">
+	
 		<legend align="center">
-			<h2 style="margin: 0 15px;">Student Details</h2>
+			<h2 style="margin: 0 15px;padding:5px; background-color: rgb(6 7 7 / 20%); border-radius:10px">Student Details</h2>
 		</legend>
-		<table id="table2">
+		<table id="table2" border="1px solid black";>
 			<thead>
 				<tr>
 					<td><h3>Sudent Id</h3></td>
@@ -140,7 +142,7 @@ margin: 0 auto 20px auto;
 				%>
 			</thead>
 		</table>
-	</fieldset>
+	
 	<%
 	}
 	%>

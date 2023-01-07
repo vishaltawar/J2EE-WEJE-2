@@ -178,7 +178,7 @@ public class StudentControler {
 		if (student != null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("login", student);
-			session.setMaxInactiveInterval(30);
+			session.setMaxInactiveInterval(60);
 			return "Home";
 		}
 		map.addAttribute("msg", "Inavlid username or password..!!");
@@ -191,6 +191,24 @@ public class StudentControler {
 		map.addAttribute("msg", "Successfully Logout...!");
 		
 		return "StudentLogin";
+	}
+	
+	@GetMapping("/adminlogin")
+	public String geAdminLogin() {
+		return "AdminLogin";
+	}
+	
+	@PostMapping("/adminlogin")
+	public String Adminlogin(HttpServletRequest request,@RequestParam String username, @RequestParam String password, ModelMap map) {
+		StudentPojo student = service.Adminlogin(username, password);
+		if (student != null) {
+			HttpSession session = request.getSession();
+			session.setAttribute("login", student);
+			session.setMaxInactiveInterval(60);
+			return "Home";
+		}
+		map.addAttribute("msg", "Inavlid username or password..!!");
+		return "AdminLogin";
 	}
 
 }

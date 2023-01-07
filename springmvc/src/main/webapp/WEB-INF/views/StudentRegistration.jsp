@@ -82,6 +82,18 @@ table tr td input {
 </style>
 </head>
 <body>
+<%
+	if (student != null) {
+	%>
+	<h3 class="responce">
+		<%=student.getName() + " Data Added Successfully"%></h3>
+	<%
+	} else if (masage != null) {
+	%>
+	<h3 class="responce"><%=masage%></h3S>
+	<%
+	}
+	%>
 	<div id="main">
 		<h3 id="headtext">Student Registration</h3>
 		<form action="./add" method="post">
@@ -124,17 +136,6 @@ table tr td input {
 			</table>
 		</form>
 	</div>
-	<%
-	if (student != null) {
-	%>
-	<h3 class="responce">
-		<%=student.getName() + " Data Added Successfully"%></h3>
-	<%
-	} else if (masage != null) {
-	%>
-	<h3 class="responce"><%=masage%></h3S>
-	<%
-	}
-	%>
+	
 </body>
 </html>

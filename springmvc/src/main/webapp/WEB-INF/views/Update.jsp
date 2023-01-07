@@ -64,21 +64,20 @@ h3 {
 	color: black;
 }
 
-#table2 {
-	margin: 20px auto;
-	background-color: yellow;
+#table2 {	
+margin: 20px auto;
 	width: 100%;
 	padding: 15px;
 	text-align: center;
-	border: 1px solid;
-	border-spacing: 10px;
+	background-color:yellow;
+	
+	border-spacing: 0px;
 	
 }
-
-#fld {
-	width: 95%;
-	margin: 0 auto 20px auto;
+#table2 tr td{
+padding: 8px;
 }
+
 </style>
 </head>
 <body>
@@ -103,11 +102,11 @@ h3 {
 
 	if (students != null) {
 	%>
-	<fieldset id="fld">
+	
 		<legend align="center">
-			<h2 style="margin: 0 15px;">Student Details</h2>
+			<h2 style="margin: 0 15px;padding:5px; background-color: rgb(6 7 7 / 20%); border-radius:10px">Student Details</h2>
 		</legend>
-		<table id="table2">
+		<table id="table2" border="1px solid black";>
 			
 				<tr>
 					<td><h3>SudentId</h3></td>
@@ -135,7 +134,7 @@ h3 {
 			}
 			%>
 		</table>
-	</fieldset>
+	
 	<%
 	}
 	%>
