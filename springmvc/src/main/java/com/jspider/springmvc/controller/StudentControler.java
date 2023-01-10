@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
+import com.jspider.springmvc.pojo.AdminPojo;
 import com.jspider.springmvc.pojo.StudentPojo;
 import com.jspider.springmvc.service.StudentService;
 
@@ -23,8 +24,8 @@ public class StudentControler {
 	StudentService service;
 
 	@GetMapping("/home")
-	public String getHome(@SessionAttribute(name = "login", required = false) StudentPojo login,ModelMap map) {
-		if(login==null) {
+	public String getHome(@SessionAttribute(name = "login", required = false) AdminPojo login, ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -32,8 +33,8 @@ public class StudentControler {
 	}
 
 	@GetMapping("/add")
-	public String getAdd(@SessionAttribute(name = "login", required = false) StudentPojo login,ModelMap map) {
-		if(login==null) {
+	public String getAdd(@SessionAttribute(name = "login", required = false) AdminPojo login, ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -41,9 +42,10 @@ public class StudentControler {
 	}
 
 	@PostMapping("/add")
-	public String getAddStudent(@SessionAttribute(name = "login", required = false) StudentPojo login,@RequestParam String name, @RequestParam String email, @RequestParam long mobile,
-			@RequestParam String city, @RequestParam String username, @RequestParam String password, ModelMap map) {
-		if(login==null) {
+	public String getAddStudent(@SessionAttribute(name = "login", required = false) AdminPojo login,
+			@RequestParam String name, @RequestParam String email, @RequestParam long mobile, @RequestParam String city,
+			@RequestParam String username, @RequestParam String password, ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -57,8 +59,8 @@ public class StudentControler {
 	}
 
 	@GetMapping("/search")
-	public String getSearch(@SessionAttribute(name = "login", required = false) StudentPojo login,ModelMap map) {
-		if(login==null) {
+	public String getSearch(@SessionAttribute(name = "login", required = false) AdminPojo login, ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -66,8 +68,9 @@ public class StudentControler {
 	}
 
 	@PostMapping("/search")
-	public String searchData(@SessionAttribute(name = "login", required = false) StudentPojo login,@RequestParam int id, ModelMap map) {
-		if(login==null) {
+	public String searchData(@SessionAttribute(name = "login", required = false) AdminPojo login, @RequestParam int id,
+			ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -81,8 +84,8 @@ public class StudentControler {
 	}
 
 	@GetMapping("/remove")
-	public String getRemove(@SessionAttribute(name = "login", required = false) StudentPojo login,ModelMap map) {
-		if(login==null) {
+	public String getRemove(@SessionAttribute(name = "login", required = false) AdminPojo login, ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -97,8 +100,9 @@ public class StudentControler {
 	}
 
 	@PostMapping("/remove")
-	public String removeStudent(@SessionAttribute(name = "login", required = false) StudentPojo login,@RequestParam int id, ModelMap map) {
-		if(login==null) {
+	public String removeStudent(@SessionAttribute(name = "login", required = false) AdminPojo login,
+			@RequestParam int id, ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -116,8 +120,8 @@ public class StudentControler {
 	}
 
 	@GetMapping("/update")
-	public String getUpdate(@SessionAttribute(name = "login", required = false) StudentPojo login,ModelMap map) {
-		if(login==null) {
+	public String getUpdate(@SessionAttribute(name = "login", required = false) AdminPojo login, ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -127,8 +131,9 @@ public class StudentControler {
 	}
 
 	@PostMapping("/update")
-	public String updateStudent(@SessionAttribute(name = "login", required = false) StudentPojo login,@RequestParam int id, ModelMap map) {
-		if(login==null) {
+	public String updateStudent(@SessionAttribute(name = "login", required = false) AdminPojo login,
+			@RequestParam int id, ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -136,11 +141,11 @@ public class StudentControler {
 
 		if (student != null) {
 			map.addAttribute("student", student);
-			
+
 			return "UpdateDetails";
 		} else {
-			 List<StudentPojo> students = service.searchAll();
-			 map.addAttribute("students", students);
+			List<StudentPojo> students = service.searchAll();
+			map.addAttribute("students", students);
 			map.addAttribute("msg", "Data not found..!!");
 			return "Update";
 		}
@@ -148,10 +153,10 @@ public class StudentControler {
 	}
 
 	@PostMapping("/updatedetails")
-	public String getUpdateDetails(@SessionAttribute(name = "login", required = false) StudentPojo login,@RequestParam int id, @RequestParam String name, @RequestParam String email,
-			@RequestParam long mobile, @RequestParam String city, @RequestParam String username,
-			@RequestParam String password, ModelMap map) {
-		if(login==null) {
+	public String getUpdateDetails(@SessionAttribute(name = "login", required = false) AdminPojo login,
+			@RequestParam int id, @RequestParam String name, @RequestParam String email, @RequestParam long mobile,
+			@RequestParam String city, @RequestParam String username, @RequestParam String password, ModelMap map) {
+		if (login == null) {
 			map.addAttribute("msg", "Please Login First..!!");
 			return "StudentLogin";
 		}
@@ -159,7 +164,7 @@ public class StudentControler {
 		if (student != null) {
 			service.updateDeatails(id, name, email, mobile, city, username, password);
 
-			map.addAttribute("msg", name+ " Data Successfully Updated");
+			map.addAttribute("msg", name + " Data Successfully Updated");
 			List<StudentPojo> students = service.searchAll();
 			map.addAttribute("students", students);
 
@@ -172,43 +177,73 @@ public class StudentControler {
 		return "StudentLogin";
 	}
 
-	@PostMapping("/login")
-	public String login(HttpServletRequest request,@RequestParam String username, @RequestParam String password, ModelMap map) {
-		StudentPojo student = service.login(username, password);
-		if (student != null) {
-			HttpSession session = request.getSession();
-			session.setAttribute("login", student);
-			session.setMaxInactiveInterval(60);
-			return "Home";
-		}
-		map.addAttribute("msg", "Inavlid username or password..!!");
-		return "StudentLogin";
-	}
+//	@PostMapping("/login")
+//	public String login(HttpServletRequest request,@RequestParam String username, @RequestParam String password, ModelMap map) {
+//		StudentPojo student = service.login(username, password);
+//		if (student != null) {
+//			HttpSession session = request.getSession();
+//			session.setAttribute("login", student);
+//			session.setMaxInactiveInterval(60);
+//			return "Home";
+//		}
+//		map.addAttribute("msg", "Inavlid username or password..!!");
+//		return "StudentLogin";
+//	}
 	
-	@GetMapping("/logout")
-	public String geLogout(HttpSession session, ModelMap map) {
-		session.invalidate();
-		map.addAttribute("msg", "Successfully Logout...!");
-		
-		return "StudentLogin";
+	
+//*************************************************************************
+	
+	@GetMapping("/adminhome")
+	public String adminHome() {
+		return "AdminHome";
 	}
 	
 	@GetMapping("/adminlogin")
 	public String geAdminLogin() {
 		return "AdminLogin";
 	}
-	
+
 	@PostMapping("/adminlogin")
-	public String Adminlogin(HttpServletRequest request,@RequestParam String username, @RequestParam String password, ModelMap map) {
-		StudentPojo student = service.Adminlogin(username, password);
-		if (student != null) {
+	public String Adminlogin(HttpServletRequest request, @RequestParam String username, @RequestParam String password,
+			ModelMap map) {
+		AdminPojo admin = service.adminLogin(username, password);
+		if (admin != null) {
 			HttpSession session = request.getSession();
-			session.setAttribute("login", student);
+			session.setAttribute("login", admin);
 			session.setMaxInactiveInterval(60);
 			return "Home";
 		}
 		map.addAttribute("msg", "Inavlid username or password..!!");
 		return "AdminLogin";
+	}
+
+	@GetMapping("/logout")
+	public String geLogout(HttpSession session, ModelMap map) {
+		session.invalidate();
+		map.addAttribute("msg", "Successfully Logout...!");
+
+		return "AdminLogin";
+	}
+
+	// Add Admin
+
+	@PostMapping("/addadmin")
+	public String addAdmin(@RequestParam String name, @RequestParam String username, @RequestParam String password,
+			ModelMap map) {
+
+		AdminPojo admin = service.addAdmin(name, username, password);
+		if (admin != null) {
+			map.addAttribute("admin", admin);
+		} else {
+			map.addAttribute("msg", "Data not added in Database!");
+		}
+		return "AdminRegistration";
+	}
+
+	@GetMapping("/addadmin")
+	public String getAdd() {
+
+		return "AdminRegistration";
 	}
 
 }

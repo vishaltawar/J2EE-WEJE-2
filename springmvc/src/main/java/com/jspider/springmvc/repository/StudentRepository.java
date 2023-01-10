@@ -12,6 +12,7 @@ import org.hibernate.TransactionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.jspider.springmvc.pojo.AdminPojo;
 import com.jspider.springmvc.pojo.StudentPojo;
 
 @Repository
@@ -50,24 +51,20 @@ public class StudentRepository {
 		}
 	}
 
-	public StudentPojo login(String username, String password) {
-		openConnection();
-		entityTransaction.begin();
-
-		// Write logic here...
-		jpql = "from StudentPojo where username = '" + username + "' and password = '" + password + "'";
-		query = entityManager.createQuery(jpql);
-		List<StudentPojo> resultList = query.getResultList();
-		for (StudentPojo pojo : resultList) {
-			return pojo;
-		}
-
-		entityTransaction.commit();
-		clossConnection();
-
-		return null;
-
-	}
+//	public StudentPojo login(String username, String password) {
+//		openConnection();
+//		entityTransaction.begin();
+//		jpql = "from StudentPojo where username = '" + username + "' and password = '" + password + "'";
+//		query = entityManager.createQuery(jpql);
+//		List<StudentPojo> resultList = query.getResultList();
+//		for (StudentPojo pojo : resultList) {
+//			return pojo;
+//		}
+//		entityTransaction.commit();
+//		clossConnection();
+//
+//		return null;
+//	}
 
 	public StudentPojo addStudent(String name, String email, long mobile, String city, String username,
 			String password) {
@@ -144,6 +141,38 @@ public class StudentRepository {
 
 		return student;
 
+	}
+
+	public AdminPojo adminLogin(String username, String password) {
+		openConnection();
+		entityTransaction.begin();
+
+		jpql = "from AdminPojo where username = '" + username + "' and password = '" + password + "'";
+		query = entityManager.createQuery(jpql);
+		List<AdminPojo> resultList = query.getResultList();
+		for (AdminPojo adminPojo : resultList) {
+			return adminPojo;
+		}
+
+		entityTransaction.commit();
+		clossConnection();
+
+		return null;
+
+	}
+
+	public AdminPojo addAdmin(String name, String username, String password) {
+		openConnection();
+		entityTransaction.begin();
+		AdminPojo adminPojo = new AdminPojo();
+		adminPojo.setName(name);
+		adminPojo.setUsername(username);
+		adminPojo.setPassword(password);
+		entityManager.persist(adminPojo);
+		entityTransaction.commit();
+
+		clossConnection();
+		return adminPojo;
 	}
 
 }

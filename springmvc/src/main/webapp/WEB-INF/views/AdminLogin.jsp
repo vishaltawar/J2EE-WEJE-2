@@ -1,8 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<jsp:include page="AdminNavbar.jsp"></jsp:include>
 	<%
 		String msg=(String)request.getAttribute("msg");
 	%>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,13 +24,13 @@ body {
 		no-repeat;
 	background-size: 100% 100%;
 	width: 100%;
-	height: 75vh;
+	height: 100vh;
 }
 
 #main {
 	background: linear-gradient(rgba(15, 16, 16, 0.655),
 		rgba(15, 16, 16, 0.455));
-	margin: 150px auto;
+	margin: 85px auto;
 	width: 30%;
 	height: auto;
 	padding: 50px;
@@ -80,7 +82,7 @@ color: red;
 <body>
 	<div id="main">
 		<h3 id="headtext">Admin Login</h3>
-		<form action="./login" method="post">
+		<form action="./adminlogin" method="post">
 			<table>
 				<tr>
 					<td><input type="text" placeholder="Enter the Admin Username"

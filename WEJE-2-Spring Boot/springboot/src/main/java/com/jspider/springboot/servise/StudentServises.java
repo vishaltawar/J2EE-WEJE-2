@@ -1,5 +1,7 @@
 package com.jspider.springboot.servise;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -50,6 +52,11 @@ public class StudentServises {
 		StudentPojo students = repository.findByName(name);		
 		return students;
 
+	}
+
+	public List<StudentPojo> getAll() {
+		List<StudentPojo> students = repository.findAll();
+		return students;
 	}
 
 }

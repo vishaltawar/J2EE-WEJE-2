@@ -1,9 +1,10 @@
-<%@page import="com.jspider.springmvc.pojo.StudentPojo"%>
+<%@page import="com.jspider.springmvc.pojo.AdminPojo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<jsp:include page="Navbar.jsp"></jsp:include>
+	<jsp:include page="AdminNavbar.jsp"></jsp:include>
+
 <%
-StudentPojo student = (StudentPojo) request.getAttribute("student");
+AdminPojo admin = (AdminPojo) request.getAttribute("admin");
 String masage = (String) request.getAttribute("msg");
 %>
 <!DOCTYPE html>
@@ -23,12 +24,13 @@ body {
 		rgba(163, 55, 141, 0.913)) no-repeat;
 	background-size: 100% 100%;
 	width: 100%;
+	height: 100vh;
 }
 
 #main {
 	background: linear-gradient(rgba(15, 16, 16, 0.655),
 		rgba(15, 16, 16, 0.455));
-	margin: 25px auto;
+	margin: 35px auto;
 	min-width: 250px;
 	max-width: 35%;
 	height: auto;
@@ -83,10 +85,10 @@ table tr td input {
 </head>
 <body>
 <%
-	if (student != null) {
+	if (admin != null) {
 	%>
 	<h3 class="responce">
-		<%=student.getName() + " Data Added Successfully"%></h3>
+		<%=admin.getName() + " Data Added Successfully"%></h3>
 	<%
 	} else if (masage != null) {
 	%>
@@ -95,18 +97,18 @@ table tr td input {
 	}
 	%>
 	<div id="main">
-		<h3 id="headtext">Student Registration</h3>
-		<form action="./add" method="post">
+		<h3 id="headtext">Admin Registration</h3>
+		<form action="./addadmin" method="post">
 
 			<table>
 				<!-- 	<tr>
 					<td><input type="text" placeholder="Enter ID" required name="id"></td>
 				</tr> -->
 				<tr>
-					<td><input type="text" placeholder="Enter the Name"
+					<td><input type="text" placeholder="Enter the Admin Name"
 						name="name"></td>
 				</tr>
-				<tr>
+				<!-- <tr>
 					<td><input type="text" placeholder="Enter Email Id "
 						name="email"></td>
 				</tr>
@@ -117,7 +119,7 @@ table tr td input {
 				<tr>
 					<td><input type="text" placeholder="Enter City Name"
 						name="city"></td>
-				</tr>
+				</tr> -->
 				<tr>
 					<td><input type="text" required
 						placeholder="Enter the Username" name="username"></td>

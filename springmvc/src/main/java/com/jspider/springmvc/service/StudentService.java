@@ -15,10 +15,10 @@ public class StudentService {
 	@Autowired
 	StudentRepository repository;
 
-	public StudentPojo login(String username, String password) {
-		StudentPojo pojo = repository.login(username, password);
-		return pojo;
-	}
+//	public StudentPojo login(String username, String password) {
+//		StudentPojo pojo = repository.login(username, password);
+//		return pojo;
+//	}
 
 	public StudentPojo addStudent(String name, String email, long mobile, String city, String username, String password) {
 		StudentPojo pojo = repository.addStudent(name, email,  mobile, city, username, password);
@@ -50,11 +50,19 @@ public class StudentService {
 		return pojo;
 
 	}
+	
+	
+	public AdminPojo adminLogin(String username, String password) {
+		AdminPojo adminPojo = repository.adminLogin(username, password);
 
-	public StudentPojo Adminlogin(String username, String password) {
-		AdminPojo adminPojo = repository.Adminlogin(username, password);
-		
-		return null;
+		return adminPojo;
 	}
+
+	public AdminPojo addAdmin(String name, String username, String password) {
+		AdminPojo adminPojo = repository.addAdmin(name, username, password);
+		return adminPojo;
+	}
+
+	
 
 }

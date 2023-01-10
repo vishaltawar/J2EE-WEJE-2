@@ -1,5 +1,7 @@
 package com.jspider.springboot.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -88,6 +90,21 @@ public class StudentController {
 					new StudentResponse("Ok", "Successfully Updated", updatedStudent, null), HttpStatus.ACCEPTED);
 		}
 		return new ResponseEntity<StudentResponse>(new StudentResponse("Fail", "Not Updated", updatedStudent, null),
+				HttpStatus.BAD_REQUEST);
+
+	}
+
+	// GetAll Student's
+
+	@GetMapping("/getall")
+	public ResponseEntity<StudentResponse> getAll() {
+		List<StudentPojo> students = servises.getAll();
+
+		if (students != null) {
+			return new ResponseEntity<StudentResponse>(
+					new StudentResponse("Ok", "Successfully find All Students", null, students), HttpStatus.ACCEPTED);
+		}
+		return new ResponseEntity<StudentResponse>(new StudentResponse("Fail", "Not Found Data", null, students),
 				HttpStatus.BAD_REQUEST);
 
 	}
