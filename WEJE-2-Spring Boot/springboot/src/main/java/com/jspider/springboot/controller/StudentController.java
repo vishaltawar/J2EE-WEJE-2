@@ -44,7 +44,7 @@ public class StudentController {
 	// Search By Id
 	@GetMapping("/search{id}")
 	public ResponseEntity<StudentResponse> search(@PathVariable int id) {
-		StudentPojo student = servises.search(id);
+		StudentPojo student = servises.searchById(id);
 		if (student != null) {
 			return new ResponseEntity<StudentResponse>(new StudentResponse("ok", "Successfully Found", student, null),
 					HttpStatus.FOUND);

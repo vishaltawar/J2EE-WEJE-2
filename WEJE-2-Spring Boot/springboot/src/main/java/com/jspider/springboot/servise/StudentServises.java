@@ -8,18 +8,26 @@ import org.springframework.stereotype.Service;
 import com.jspider.springboot.pojo.StudentPojo;
 import com.jspider.springboot.repository.StudentRepository;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
 @Service
+@AllArgsConstructor
+@NoArgsConstructor
 public class StudentServises {
 	@Autowired
 	StudentRepository repository;
 
+	// Testing Done
 	public StudentPojo add(StudentPojo student) {
 		StudentPojo pojo = repository.save(student);
 		return pojo;
 
 	}
 
-	public StudentPojo search(int id) {
+	// StudenPojo can not be return findById()
+	// findById() should return Optional
+	public StudentPojo searchById(int id) {
 		StudentPojo student = repository.findById(id).orElse(null);
 		// System.out.println(student);
 		return student;
@@ -54,6 +62,7 @@ public class StudentServises {
 
 	}
 
+	// Testing Done
 	public List<StudentPojo> getAll() {
 		List<StudentPojo> students = repository.findAll();
 		return students;
