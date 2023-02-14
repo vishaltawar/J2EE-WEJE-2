@@ -760,3 +760,246 @@ Jan 09, 2023 16:12:40.241 [8692:2736:0109/161240.241:ERROR:network_service_insta
 Jan 09, 2023 16:12:42.640 [8692:2736:0109/161242.639:ERROR:device_event_log_impl.cc(215)] [16:12:42.639] USB: usb_device_handle_win.cc:1045 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
 Jan 09, 2023 16:12:51.721 [8692:7768:0109/161251.720:ERROR:persistent_memory_allocator.cc(852)] Corruption detected in shared-memory segment.
 Jan 09, 2023 16:15:16.259 [8692:1984:0109/161516.258:ERROR:util.cc(139)] Can't create base directory: C:\Program Files\Microsoft\EdgeUpdater
+
+Jan 29, 2023 18:13:37.540 NEW SESSION
+Jan 29, 2023 18:13:37.541 [5184:3436:0129/181336.799:ERROR:assistance_home_client.cc(32)] File path C:\Users\ADMIN\AppData\Local\Microsoft\Edge\User Data\Default
+Jan 29, 2023 18:13:53.751 [5184:3436:0129/181353.750:ERROR:network_service_instance_impl.cc(554)] Network service crashed, restarting service.
+Jan 29, 2023 18:13:55.480 [5184:3436:0129/181355.479:ERROR:device_event_log_impl.cc(215)] [18:13:55.479] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Jan 29, 2023 18:14:51.602 [5184:7232:0129/181451.601:ERROR:util.cc(140)] Can't create base directory: C:\Program Files\Microsoft\EdgeUpdater
+Jan 29, 2023 18:35:29.417 [5184:3436:0129/183529.412:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jan 29, 2023 18:35:29.860 [5184:3436:0129/183529.860:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jan 29, 2023 18:35:33.671 [5184:3436:0129/183533.669:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jan 29, 2023 18:35:33.676 [5184:3436:0129/183533.676:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jan 29, 2023 18:35:35.238 [5184:3436:0129/183535.236:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jan 29, 2023 18:35:35.780 [5184:3436:0129/183535.780:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Jan 29, 2023 18:53:25.632 [5184:3436:0129/185325.629:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+
+Feb 05, 2023 24:03:09.154 NEW SESSION
+Feb 05, 2023 24:03:09.154 Opening in existing browser session.
+
+Feb 05, 2023 17:05:55.830 NEW SESSION
+Feb 05, 2023 17:05:55.831 [10956:12768:0205/170555.139:ERROR:network_service_instance_impl.cc(539)] Network service crashed, restarting service.
+Feb 05, 2023 17:06:04.959 [10956:12768:0205/170604.958:ERROR:device_event_log_impl.cc(215)] [17:06:04.958] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Feb 05, 2023 17:06:37.522 [10956:13228:0205/170637.522:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 17:06:37.523 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 17:06:37.524 ERROR: Failed parsing Certificate
+Feb 05, 2023 17:06:37.525 
+Feb 05, 2023 17:06:40.221 [10956:13228:0205/170640.220:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 17:06:40.221 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 17:06:40.222 ERROR: Failed parsing Certificate
+Feb 05, 2023 17:06:40.223 
+Feb 05, 2023 17:19:56.712 [10956:7352:0205/171955.291:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 17:19:56.849 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 17:19:56.850 ERROR: Failed parsing Certificate
+Feb 05, 2023 17:19:56.852 
+Feb 05, 2023 17:19:56.855 [10956:13228:0205/171955.291:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 17:19:56.857 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 17:19:56.858 ERROR: Failed parsing Certificate
+Feb 05, 2023 17:19:56.860 
+Feb 05, 2023 17:20:12.937 [10956:8744:0205/172012.935:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 17:20:12.938 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 17:20:12.939 ERROR: Failed parsing Certificate
+Feb 05, 2023 17:20:12.940 
+Feb 05, 2023 17:30:24.16 [10956:7352:0205/173024.014:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 17:30:24.32 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 17:30:24.35 ERROR: Failed parsing Certificate
+Feb 05, 2023 17:30:24.37 
+Feb 05, 2023 18:06:19.504 [10956:11924:0205/180619.345:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 18:06:19.511 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 18:06:19.512 ERROR: Failed parsing Certificate
+Feb 05, 2023 18:06:19.512 
+Feb 05, 2023 19:06:20.351 [10956:11416:0205/190620.211:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 19:06:20.389 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 19:06:20.390 ERROR: Failed parsing Certificate
+Feb 05, 2023 19:06:20.390 
+Feb 05, 2023 19:06:40.532 [10956:11416:0205/190640.529:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 19:06:40.533 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 19:06:40.535 ERROR: Failed parsing Certificate
+Feb 05, 2023 19:06:40.536 
+Feb 05, 2023 19:47:50.578 [10956:5716:0205/194750.578:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Feb 05, 2023 19:53:31.750 [10956:5716:0205/195331.750:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+Feb 05, 2023 20:06:20.440 [10956:13792:0205/200620.439:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 20:06:20.473 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 20:06:20.474 ERROR: Failed parsing Certificate
+Feb 05, 2023 20:06:20.485 
+Feb 05, 2023 20:46:37.775 [10956:5716:0205/204636.800:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Feb 05, 2023 23:20:39.789 [10956:5716:0205/232039.789:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Feb 05, 2023 23:20:42.747 [10956:5716:0205/232042.747:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 05, 2023 23:21:32.742 [10956:5716:0205/232132.741:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 05, 2023 23:21:44.826 [10956:9504:0205/232144.825:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 23:21:44.827 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 23:21:44.828 ERROR: Failed parsing Certificate
+Feb 05, 2023 23:21:45.244 
+Feb 05, 2023 23:21:45.245 [10956:2252:0205/232144.826:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 05, 2023 23:21:45.246 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 05, 2023 23:21:45.247 ERROR: Failed parsing Certificate
+Feb 05, 2023 23:21:45.248 
+Feb 06, 2023 24:06:19.237 [10956:9684:0206/000619.076:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:06:19.343 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:06:19.344 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:06:19.356 
+Feb 06, 2023 24:31:52.223 [10956:6520:0206/003151.570:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:31:52.319 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:31:52.322 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:31:52.323 
+Feb 06, 2023 24:31:52.324 [10956:12468:0206/003152.151:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:31:52.324 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:31:52.325 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:31:52.326 
+Feb 06, 2023 24:31:53.25 [10956:12468:0206/003153.025:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:31:53.26 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:31:53.26 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:31:53.27 
+Feb 06, 2023 24:31:55.624 [10956:6520:0206/003155.623:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:31:55.624 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:31:55.626 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:31:55.626 
+Feb 06, 2023 24:34:49.408 [10956:14132:0206/003449.380:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:34:49.452 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:34:49.453 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:34:49.464 
+Feb 06, 2023 24:34:51.811 [10956:3004:0206/003451.810:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:34:51.946 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:34:51.949 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:34:51.960 
+Feb 06, 2023 24:34:56.713 [10956:9108:0206/003456.703:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:34:56.715 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:34:56.717 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:34:56.718 
+Feb 06, 2023 24:34:56.721 [10956:3004:0206/003456.704:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:34:56.730 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:34:56.732 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:34:56.733 
+Feb 06, 2023 24:35:59.603 [10956:6732:0206/003559.603:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:35:59.604 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:35:59.605 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:35:59.606 
+Feb 06, 2023 24:36:21.483 [10956:12752:0206/003621.483:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 24:36:21.484 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 24:36:21.485 ERROR: Failed parsing Certificate
+Feb 06, 2023 24:36:21.488 
+
+Feb 06, 2023 13:47:11.103 NEW SESSION
+Feb 06, 2023 13:47:11.104 [10476:2856:0206/134711.029:ERROR:device_event_log_impl.cc(215)] [13:47:11.030] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Feb 06, 2023 13:47:11.191 [10476:2856:0206/134711.035:ERROR:device_event_log_impl.cc(215)] [13:47:11.035] USB: usb_device_handle_win.cc:1046 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Feb 06, 2023 13:47:38.222 [10476:4296:0206/134738.222:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 13:47:38.223 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 13:47:38.224 ERROR: Failed parsing Certificate
+Feb 06, 2023 13:47:38.225 
+Feb 06, 2023 13:47:38.351 [10476:4320:0206/134738.348:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 13:47:38.352 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 13:47:38.353 ERROR: Failed parsing Certificate
+Feb 06, 2023 13:47:38.354 
+Feb 06, 2023 14:08:16.221 [10476:2856:0206/140816.220:ERROR:page_load_metrics_update_dispatcher.cc(160)] Invalid parse_start 1.684 s for activation_start 1.62643 s
+Feb 06, 2023 14:08:16.860 [10476:2856:0206/140816.859:ERROR:page_load_metrics_update_dispatcher.cc(160)] Invalid parse_start 1.684 s for activation_start 1.62643 s
+Feb 06, 2023 14:08:16.949 [10476:2856:0206/140816.948:ERROR:page_load_metrics_update_dispatcher.cc(160)] Invalid parse_start 1.684 s for activation_start 1.62643 s
+Feb 06, 2023 14:08:18.232 [10476:2856:0206/140818.231:ERROR:page_load_metrics_update_dispatcher.cc(160)] Invalid parse_start 1.684 s for activation_start 1.62643 s
+Feb 06, 2023 14:08:23.491 [10476:2856:0206/140823.491:ERROR:page_load_metrics_update_dispatcher.cc(160)] Invalid parse_start 1.684 s for activation_start 1.62643 s
+Feb 06, 2023 14:08:23.617 [10476:2856:0206/140823.616:ERROR:page_load_metrics_update_dispatcher.cc(160)] Invalid parse_start 1.684 s for activation_start 1.62643 s
+Feb 06, 2023 14:08:23.706 [10476:2856:0206/140823.706:ERROR:page_load_metrics_update_dispatcher.cc(160)] Invalid parse_start 1.684 s for activation_start 1.62643 s
+Feb 06, 2023 14:08:23.769 [10476:2856:0206/140823.769:ERROR:page_load_metrics_update_dispatcher.cc(160)] Invalid parse_start 1.684 s for activation_start 1.62643 s
+Feb 06, 2023 14:47:16.43 [10476:12480:0206/144716.042:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 14:47:16.54 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 14:47:16.55 ERROR: Failed parsing Certificate
+Feb 06, 2023 14:47:16.56 
+Feb 06, 2023 14:54:11.879 [10476:4320:0206/145411.879:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 14:54:11.905 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 14:54:11.908 ERROR: Failed parsing Certificate
+Feb 06, 2023 14:54:11.908 
+Feb 06, 2023 14:54:12.07 [10476:4320:0206/145412.006:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 14:54:12.08 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 14:54:12.08 ERROR: Failed parsing Certificate
+Feb 06, 2023 14:54:12.09 
+Feb 06, 2023 14:54:13.550 [10476:4320:0206/145413.550:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 14:54:13.551 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 14:54:13.556 ERROR: Failed parsing Certificate
+Feb 06, 2023 14:54:13.557 
+Feb 06, 2023 15:27:17.500 [10476:13208:0206/152717.499:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:27:20.175 [10476:13208:0206/152720.174:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:27:21.747 [10476:13208:0206/152721.747:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:27:23.437 [10476:13208:0206/152723.436:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+Feb 06, 2023 15:27:30.542 [10476:2856:0206/152730.542:ERROR:device_event_log_impl.cc(215)] [15:27:30.541] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Feb 06, 2023 15:27:47.440 [10476:13208:0206/152747.439:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:27:49.602 [10476:13208:0206/152749.602:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:27:58.84 [10476:13208:0206/152758.083:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:28:51.269 [10476:13208:0206/152851.269:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:28:57.457 [10476:13208:0206/152857.457:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:29:01.293 [10476:13208:0206/152901.292:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:29:18.300 [10476:13208:0206/152918.299:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:39:33.442 [10476:13208:0206/153933.441:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:57:26.768 [10476:13208:0206/155726.768:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:57:31.627 [10476:13208:0206/155731.627:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:57:36.46 [10476:13208:0206/155736.046:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 15:57:52.844 [10476:13208:0206/155752.844:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 16:03:08.311 [10476:13208:0206/160308.310:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -106
+Feb 06, 2023 16:05:17.281 [10476:2856:0206/160517.278:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Feb 06, 2023 16:10:40.804 [10476:2856:0206/161040.803:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Feb 06, 2023 16:13:52.675 [10476:2856:0206/161352.674:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Feb 06, 2023 16:14:37.570 [10476:2856:0206/161437.570:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Feb 06, 2023 16:19:23.433 [10476:13208:0206/161923.433:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 06, 2023 16:47:15.618 [10476:9128:0206/164715.618:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 16:47:15.644 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 16:47:15.647 ERROR: Failed parsing Certificate
+Feb 06, 2023 16:47:15.648 
+Feb 06, 2023 16:47:26.832 [10476:2856:0206/164726.831:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+Feb 06, 2023 17:06:03.501 [10476:13208:0206/170603.501:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Feb 06, 2023 17:47:15.574 [10476:6392:0206/174715.503:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 17:47:15.585 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 17:47:15.586 ERROR: Failed parsing Certificate
+Feb 06, 2023 17:47:15.587 
+Feb 06, 2023 17:51:41.298 [10476:13520:0206/175141.297:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 17:51:41.298 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 17:51:41.299 ERROR: Failed parsing Certificate
+Feb 06, 2023 17:51:41.300 
+Feb 06, 2023 18:37:29.190 [10476:2856:0206/183728.759:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+Feb 06, 2023 18:37:30.158 [10476:2856:0206/183728.793:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+Feb 06, 2023 18:37:30.169 [10476:2856:0206/183728.793:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+Feb 06, 2023 18:37:32.749 [10476:2856:0206/183732.746:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+Feb 06, 2023 18:37:32.755 [10476:2856:0206/183732.754:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+Feb 06, 2023 18:37:32.756 [10476:2856:0206/183732.755:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+Feb 06, 2023 18:37:53.42 [10476:2856:0206/183753.041:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+Feb 06, 2023 18:37:53.61 [10476:2856:0206/183753.060:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+Feb 06, 2023 18:37:53.88 [10476:2856:0206/183753.088:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+Feb 06, 2023 18:37:53.121 [10476:2856:0206/183753.120:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+Feb 06, 2023 18:37:53.121 [10476:2856:0206/183753.120:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+Feb 06, 2023 18:37:53.122 [10476:2856:0206/183753.120:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+Feb 06, 2023 18:47:15.796 [10476:8004:0206/184715.795:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 18:47:15.797 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 18:47:15.797 ERROR: Failed parsing Certificate
+Feb 06, 2023 18:47:15.798 
+Feb 06, 2023 19:47:16.94 [10476:7776:0206/194715.951:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 19:47:16.137 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 19:47:16.137 ERROR: Failed parsing Certificate
+Feb 06, 2023 19:47:16.138 
+Feb 06, 2023 19:51:46.725 [10476:2684:0206/195146.723:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 19:51:46.858 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 19:51:46.859 ERROR: Failed parsing Certificate
+Feb 06, 2023 19:51:46.860 
+Feb 06, 2023 20:42:36.49 [10476:13208:0206/204235.845:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Feb 06, 2023 23:32:48.924 [10476:14228:0206/233248.923:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 23:32:48.938 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 23:32:49.519 ERROR: Failed parsing Certificate
+Feb 06, 2023 23:32:49.534 
+Feb 06, 2023 23:47:18.51 [10476:3964:0206/234717.751:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 06, 2023 23:47:18.259 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 06, 2023 23:47:18.260 ERROR: Failed parsing Certificate
+Feb 06, 2023 23:47:18.260 
+Feb 07, 2023 24:29:45.719 [10476:13208:0207/002945.451:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Feb 07, 2023 24:29:47.155 [10476:13208:0207/002947.155:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 07, 2023 24:29:51.196 [10476:13208:0207/002951.196:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 07, 2023 24:31:28.355 [10476:13208:0207/003128.354:ERROR:connection_factory_impl.cc(472)] ConnectionHandler failed with net error: -2
+Feb 07, 2023 24:31:29.146 [10476:13208:0207/003129.145:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 07, 2023 24:31:32.746 [10476:13208:0207/003132.746:ERROR:connection_factory_impl.cc(427)] Failed to connect to MCS endpoint with error -105
+Feb 07, 2023 24:47:16.325 [10476:4172:0207/004716.324:ERROR:cert_issuer_source_aia.cc(34)] Error parsing cert retrieved from AIA (as DER):
+Feb 07, 2023 24:47:16.358 ERROR: Couldn't read tbsCertificate as SEQUENCE
+Feb 07, 2023 24:47:16.359 ERROR: Failed parsing Certificate
+Feb 07, 2023 24:47:16.447 
+Feb 07, 2023 24:56:51.537 [10476:2856:0207/005651.442:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+Feb 07, 2023 24:56:51.596 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+Feb 07, 2023 24:56:51.597 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+Feb 07, 2023 24:56:51.601 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+Feb 07, 2023 24:56:51.603 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+Feb 07, 2023 24:56:51.604 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+Feb 07, 2023 24:56:51.605 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+Feb 07, 2023 24:56:51.606 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
+Feb 07, 2023 24:56:51.606 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)

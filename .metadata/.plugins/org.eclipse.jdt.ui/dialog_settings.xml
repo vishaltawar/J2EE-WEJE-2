@@ -3,7 +3,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-1.8"/>
 	<item key="delegateUpdating" value="false"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="E:\Vishal Tawar"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="E:\Java Resources\JAR File"/>
 	<item key="SearchScopeActionGroup.search_scope_type" value="1"/>
 	<item key="CallHierarchyViewPart.call_mode" value="0"/>
 	<item key="CallHierarchyViewPart.field_mode" value="2"/>
@@ -111,7 +111,7 @@
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item key="pageIndex" value="3"/>
+		<item key="pageIndex" value="2"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item key="index" value="3"/>

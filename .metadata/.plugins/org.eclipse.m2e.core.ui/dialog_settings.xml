@@ -28,10 +28,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.jspider.product.product"/>
 		</list>
 		<list key="groupId">
+			<item value="com.jspider.product"/>
 		</list>
 		<list key="artifactId">
+			<item value="product"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

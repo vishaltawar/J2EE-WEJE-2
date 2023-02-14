@@ -44,6 +44,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="E:\Vishal Tawar\WEJE-2\musicplayer"/>
 			<item value="C:\Vishal Tawar\WEJE-2\manytomany_bidectional"/>
 			<item value="C:\Vishal Tawar\Test-Workspace\manytomany_bidectional"/>
 			<item value="C:\Vishal Tawar\Test-Workspace\onetoone_bidirectional"/>

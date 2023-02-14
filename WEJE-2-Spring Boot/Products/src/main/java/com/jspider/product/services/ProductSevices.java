@@ -10,7 +10,7 @@ import com.jspider.product.repository.ProductRepository;
 
 @Service
 public class ProductSevices {
-	
+
 	@Autowired
 	ProductRepository repository;
 
@@ -31,26 +31,30 @@ public class ProductSevices {
 
 	public Product updteProduct(Product product) {
 		Product product1 = repository.findById(product.getId()).orElse(null);
-		if(product1!=null) {
+		if (product1 != null) {
 			product1.setName(product.getName());
 			product1.setPrice(product.getPrice());
 			product1.setBrand(product.getBrand());
 			product1.setColor(product.getColor());
 			product1.setWeigth(product.getWeigth());
 			product1.setDate(product.getDate());
-			
+
 			repository.save(product1);
-			
+
 			return product1;
 		}
 		return product1;
-		
+
 	}
 
-	
+	public Product deleteProductById(int id) {
+		Product product = repository.findById(id).orElse(null);
+		if (product != null) {
+			repository.delete(product);
 
-	
-
-	
+			return product;
+		}
+		return product;
+	}
 
 }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -62,4 +63,12 @@ public class ProductController {
 		}
 		return new ResponseEntity<ProductResponse>(new ProductResponse("FAIL", "Product Not Found", updteProduct, null),HttpStatus.NOT_FOUND);
 	}
-}
+	
+	@DeleteMapping("/deleteProduct{id}")
+	public ResponseEntity<ProductResponse> deleteProductById(@PathVariable int id){
+		Product product = service.deleteProductById(id);
+		if(product!=null) {
+			return new ResponseEntity<ProductResponse>(new ProductResponse("OK", "Product Deleted Successfully", product, null),HttpStatus.OK);
+		}
+		return new ResponseEntity<ProductResponse>(new ProductResponse("FAIL", "Product Not Found", product, null),HttpStatus.NOT_FOUND);
+	}}
