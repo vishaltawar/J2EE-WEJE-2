@@ -58,13 +58,13 @@ public class StudentController {
 	@GetMapping("/searchByName")
 	public ResponseEntity<StudentResponse> searchByName(@RequestParam String name) {
 
-		StudentPojo students = servises.searchByName(name);
+		List<StudentPojo> students = servises.searchByName(name);
 		if (students != null) {
 			return new ResponseEntity<StudentResponse>(
-					new StudentResponse("OK", "Successfully Search All Student's", students, null),
+					new StudentResponse("OK", "Successfully Search All Student's", null, students),
 					HttpStatus.ACCEPTED);
 		}
-		return new ResponseEntity<StudentResponse>(new StudentResponse("Fail", "Sorry Data Not Found", students, null),
+		return new ResponseEntity<StudentResponse>(new StudentResponse("Fail", "Sorry Data Not Found", null, students),
 				HttpStatus.BAD_REQUEST);
 	}
 

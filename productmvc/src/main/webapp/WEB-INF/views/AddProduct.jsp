@@ -10,8 +10,13 @@ String msg = (String) request.getAttribute("msg");
 <html>
 <style>
 body {
-	background: linear-gradient(rgb(246, 220, 71), rgb(62, 237, 214));
+	min-width: 700px;
 	height: 100vh;
+	background: linear-gradient(rgba(0, 2, 11, 0.6), rgba(0, 2, 11, 0.6)),
+		url(https://img.freepik.com/premium-photo/supermarket-cart_11208-1204.jpg?w=2000)
+		no-repeat;
+	background-size: 100% 100%;
+	
 }
 
 #d1 {

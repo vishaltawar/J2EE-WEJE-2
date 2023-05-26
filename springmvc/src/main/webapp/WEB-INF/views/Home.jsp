@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<jsp:include page="Navbar.jsp"></jsp:include>
+<jsp:include page="Navbar.jsp"></jsp:include>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +12,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	min-width: 700px;
 	height: 100vh;
@@ -20,12 +21,14 @@ body {
 		no-repeat;
 	background-size: 100% 100%;
 }
+
 marquee {
 	margin-top: 150px;
 	font-size: 100px;
-	color: white;
-	text-shadow: 5px 5px 5px black;
-}
+	
+	color:white;
+	
+	}
 </style>
 </head>
 <body>

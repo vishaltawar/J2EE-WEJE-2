@@ -24,8 +24,7 @@ public class StudentController {
 	@Autowired
 	StudentService service;
 
-	@PostMapping(path = "/add", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
-			MediaType.APPLICATION_JSON_VALUE })
+	@PostMapping(path = "/add", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = { MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<StudentResponse> add(@RequestBody StudentPojo student) {
 		StudentPojo pojo = service.add(student);
 		StudentResponse response = new StudentResponse();

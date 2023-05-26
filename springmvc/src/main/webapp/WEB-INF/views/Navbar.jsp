@@ -94,6 +94,7 @@ ul li a {
 			<li><a href="./remove">Remove</a></li>
 			<li><a href="./update">Update</a></li>
 			<li><a href="./add">Add</a></li>
+			<li><a href="./view">View</a></li>
 			<li id="logout"><a href="./logout">Logout</a></li>
 		</ul>
 	</nav>

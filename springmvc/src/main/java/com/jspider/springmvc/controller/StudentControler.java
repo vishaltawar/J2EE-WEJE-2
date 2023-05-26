@@ -83,6 +83,22 @@ public class StudentControler {
 		return "Search";
 	}
 
+	@GetMapping("/view")
+	public String viewRecords(@SessionAttribute(name = "login", required = false) AdminPojo login, ModelMap map) {
+		if (login == null) {
+			map.addAttribute("msg", "Please Login First..!!");
+			return "StudentLogin";
+		}
+		List<StudentPojo> student = service.searchAll();
+		if (student != null) {
+			map.addAttribute("students", student);
+		} else {
+			map.addAttribute("msg", "Data Not Found!");
+		}
+
+		return "ViewRecords";
+	}
+
 	@GetMapping("/remove")
 	public String getRemove(@SessionAttribute(name = "login", required = false) AdminPojo login, ModelMap map) {
 		if (login == null) {
@@ -189,15 +205,14 @@ public class StudentControler {
 //		map.addAttribute("msg", "Inavlid username or password..!!");
 //		return "StudentLogin";
 //	}
-	
-	
+
 //*************************************************************************
-	
+
 	@GetMapping("/adminhome")
 	public String adminHome() {
 		return "AdminHome";
 	}
-	
+
 	@GetMapping("/adminlogin")
 	public String geAdminLogin() {
 		return "AdminLogin";
@@ -210,7 +225,7 @@ public class StudentControler {
 		if (admin != null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("login", admin);
-			session.setMaxInactiveInterval(60);
+//			session.setMaxInactiveInterval(60);
 			return "Home";
 		}
 		map.addAttribute("msg", "Inavlid username or password..!!");
@@ -244,6 +259,21 @@ public class StudentControler {
 	public String getAdd() {
 
 		return "AdminRegistration";
+	}
+
+	// ********************************
+
+	@GetMapping("/hello")
+	public String getVishal() {
+		
+		return "VishalForm";
+	}
+	
+	@PostMapping("/vishal")
+	public String getAddStudent( @RequestParam String msg, ModelMap map) {
+		
+		map.addAttribute("msg", msg);		
+		return "VishalDetails";
 	}
 
 }

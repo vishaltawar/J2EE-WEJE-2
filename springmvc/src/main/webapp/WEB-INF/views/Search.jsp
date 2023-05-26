@@ -124,7 +124,8 @@ input {
 		</tr>
 		<tr>
 			<td><label>Password</label></td>
-			<td>: <%=student.getPassword()%></td>
+			<td>: <%="****"%></td>
+			<!-- <td  ><%=student.getPassword()%></td>  -->
 		</tr>
 
 	</table>

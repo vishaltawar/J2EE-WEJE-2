@@ -1003,3 +1003,10 @@ Feb 07, 2023 24:56:51.604 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "Extensi
 Feb 07, 2023 24:56:51.605 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "Request Runtime.evaluate failed. {"code":-32602,"message":"uniqueContextId not found"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
 Feb 07, 2023 24:56:51.606 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/core/sdk/sdk.js (1)
 Feb 07, 2023 24:56:51.606 [10476:2856:0207/005651.561:ERROR:CONSOLE(1)] "Extension server error: Inspector protocol error: uniqueContextId not found", source: devtools://devtools/bundled/devtools-frontend/front_end/models/extensions/extensions.js (1)
+
+May 16, 2023 10:22:07.997 NEW SESSION
+May 16, 2023 10:22:07.997 [112:6832:0516/102207.395:ERROR:chrome_browser_cloud_management_controller.cc(162)] Cloud management controller initialization aborted as CBCM is not enabled.
+May 16, 2023 10:22:08.579 [112:6832:0516/102208.578:ERROR:api_wrapper.cc(102)] Calling IsEnclaveTypeSupported, error code 0
+May 16, 2023 10:22:08.899 [112:6832:0516/102208.899:ERROR:assistance_home_client.cc(32)] File path C:\Users\ADMIN\AppData\Local\Microsoft\Edge\User Data\Default
+May 16, 2023 10:22:56.94 [112:6832:0516/102256.093:ERROR:fallback_task_provider.cc(124)] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/739782.
+May 16, 2023 10:32:54.11 [112:6832:0516/103254.007:ERROR:wtm_interface_private_impl.cc(854)] SetTabTreatAsAppId(contents) failed, hr=0x80004005

@@ -26,7 +26,7 @@ nav {
 	min-width: 700px;
 	box-shadow: 12px 10px 15px;
 	height: auto;
-	    background: linear-gradient(rgb(14 21 11), rgb(227 124 31));
+	    background: linear-gradient(rgb(14 21 11), rgb(84 225 240 / 41%));
 	display: flex;
 	justify-content: space-between;
 }
@@ -41,7 +41,7 @@ nav {
 
 .logo:hover {
 	color: #00ff56;
-	border-radius: 8px;
+	transform:scale(1.1,1.5);
 }
 
 ul {
@@ -52,17 +52,18 @@ ul {
 
 ul li {
 	/*border: 1px solid  red;*/
-	margin: 0 2px;
+	margin: 0 5px;
 	list-style: none;
 }
 
 ul li:hover {
-	background-color: white;
-	border-radius: 5px;
+	transform:scale(1.1,1.5);
+	box-shadow:5px 5px 5px black;
+	border-radius: 50%;
 }
 
 ul li a:hover {
-	color: black;
+	
 	border-radius: 5px;
 }
 

@@ -1,6 +1,7 @@
 package com.jspider.springboot.servise;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,7 @@ public class StudentServises {
 
 	// Testing Done
 	public StudentPojo add(StudentPojo student) {
+		System.out.println(student);
 		StudentPojo pojo = repository.save(student);
 		return pojo;
 
@@ -56,8 +58,9 @@ public class StudentServises {
 		return studentPojo;
 	}
 
-	public StudentPojo searchByName(String name) {
-		StudentPojo students = repository.findByName(name);		
+	public List<StudentPojo> searchByName(String name) {
+	 List<StudentPojo> students = repository.findByName(name);
+	
 		return students;
 
 	}
@@ -65,6 +68,7 @@ public class StudentServises {
 	// Testing Done
 	public List<StudentPojo> getAll() {
 		List<StudentPojo> students = repository.findAll();
+		
 		return students;
 	}
 

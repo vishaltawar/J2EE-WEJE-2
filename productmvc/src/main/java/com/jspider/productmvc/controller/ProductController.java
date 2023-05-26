@@ -174,6 +174,8 @@ public class ProductController {
 			map.addAttribute("msg", "Data Remove successfuly. ");
 			return "RemoveProduct";
 		} else {
+			List<ProductPojo> allProduct = service.allProduct();
+			map.addAttribute("allProduct", allProduct);
 			map.addAttribute("msg", "Data Not Found");
 			return "RemoveProduct";
 		}
@@ -193,7 +195,7 @@ public class ProductController {
 		if (admin != null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("login", admin);
-			session.setMaxInactiveInterval(60);
+//			session.setMaxInactiveInterval(60);
 			return "Home";
 		}
 		map.addAttribute("msg", "Inavlid username or password..!!");

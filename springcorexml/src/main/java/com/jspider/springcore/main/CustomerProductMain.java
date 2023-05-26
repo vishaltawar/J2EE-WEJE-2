@@ -4,7 +4,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.jspider.springcore.beans.CustomerBean;
-import com.jspider.springcore.beans.ProductBean;
 
 public class CustomerProductMain {
 	public static void main(String[] args) {

@@ -128,7 +128,7 @@ padding: 8px;
 				<td><%=student.getContact()%></td>
 				<td><%=student.getCity()%></td>
 				<td><%=student.getUsername()%></td>
-				<td><%=student.getPassword()%></td>
+				<td><%="****"%></td>
 			</tr>
 			<%
 			}
